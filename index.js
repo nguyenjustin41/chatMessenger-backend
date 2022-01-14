@@ -17,7 +17,7 @@ app.use(cors())
 
 const io = new Server(server, { 
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://optimistic-lovelace-8bf1a3.netlify.app",
         methods: ["GET", "POST"],
     }
 });

@@ -17,7 +17,8 @@ app.use(cors())
 
 const io = new Server(server, { 
     cors: {
-        origin: "https://61e1253347d9a6b428a5a89b--optimistic-lovelace-8bf1a3.netlify.app",
+        // origin: "https://61e1253347d9a6b428a5a89b--optimistic-lovelace-8bf1a3.netlify.app",
+        origin: "https://trusting-dijkstra-bb5621.netlify.app",
         // origin: "https://optimistic-lovelace-8bf1a3.netlify.app",
         // origin: "http://localhost:3000",
         methods: ["GET", "POST"],

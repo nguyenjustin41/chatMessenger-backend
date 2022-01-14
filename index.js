@@ -15,14 +15,15 @@ const server = createServer(app);
 app.use(router)
 app.use(cors())
 
-const io = new Server(server, { 
-    cors: {
-        origin: "http://localhost:3000",
-        methods: ["GET", "POST"],
-    }
-});
+// const io = new Server(server, { 
+//     cors: {
+//         origin: "http://localhost:3000",
+//         methods: ["GET", "POST"],
+//     }
+// });
 
 
+const io = socketio(server)
 
 // listening for an event of connection
 io.on("connection", (socket) => {
